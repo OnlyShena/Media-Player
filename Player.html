@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Player</title>
+    <link rel="stylesheet" href="Player.css">
+</head>
+<body>
+    <div id="player-container">
+        <video id="myVideo" controls>
+            <source src="" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div id="controls">
+            <button id="play-pause">▶️</button>
+            <input type="range" id="volume" min="0" max="1" step="0.1" value="1">
+            <span id="time-display">0:00 / 0:00</span>
+            <div id="progress-bar-container">
+                <div id="progress-bar"></div>
+            </div>
+            <select id="speed-selector">
+                <option value="1">1x</option>
+                <option value="1.5">1.5x</option>
+                <option value="2">2x</option>
+            </select>
+            <button id="drag-drop">Drag & Drop</button>
+        </div>
+    </div>
+
+    <script src="Player.js"></script>
+</body>
+</html>
